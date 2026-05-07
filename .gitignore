@@ -1,0 +1,25 @@
+# Entorno
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Scraping HTML (MUY IMPORTANTE)
+*_files/
+*.descarga
+
+# Opcional (si quieres repo más limpio)
+# Mantener solo HTML principales
+data/raw/html/*_files/
+
+# Opcional: excluir datos pesados
+# data/raw/
+# data/processed/
+# data/final/
