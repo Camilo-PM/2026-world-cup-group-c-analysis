@@ -1,0 +1,5 @@
+﻿Team;Matches;Wins;Draws;Losses;Goals_For;Goals_Against;Goal_Difference;Avg_Goals_For;Avg_Goals_Against;Points_Form;Win_Rate;Goals_For_per_Game;Goals_Against_per_Game;Attack_Index;Defense_Index;Form_Index;Power_Score
+Switzerland;10;6;3;1;25.0;8.0;17.0;2.5;0.8;21;0.6;2.5;0.8;2.5;1.25;0.7;0.995
+Bosnia and Herzegovina;10;6;2;2;22.0;10.0;12.0;2.2;1.0;20;0.6;2.2;1.0;2.2;1.0;0.6666666666666666;0.91
+Canada;10;4;5;1;11.0;4.0;7.0;1.1;0.4;17;0.4;1.1;0.4;1.1;2.5;0.5666666666666667;0.79
+Qatar;10;4;2;4;15.0;21.0;-6.0;1.5;2.1;14;0.4;1.5;2.1;1.5;0.47619047619047616;0.4666666666666667;0.6026190476190476

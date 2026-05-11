@@ -1,17 +1,19 @@
 TEAMS = {
-    "Mexico": [
-        "data/raw/html/mexico.html",
-        "data/raw/html/mexico_2025.html"
+    "Canada": [
+        "data/raw/html/canada.html",
+        "data/raw/html/canada_2025.html"
     ],
-    "South Africa": [
-        "data/raw/html/south_africa.html"
+    "Bosnia and Herzegovina": [
+        "data/raw/html/bosnia.html",
+        "data/raw/html/bosnia_2025.html"
     ],
-    "Korea Republic": [
-        "data/raw/html/south_korea.html"
+    "Qatar": [
+        "data/raw/html/qatar.html",
+        "data/raw/html/qatar_2025.html"
     ],
-    "Czechia": [
-        "data/raw/html/czechia.html",
-        "data/raw/html/czechia_2025.html"
+    "Switzerland": [
+        "data/raw/html/switzerland.html",
+        "data/raw/html/switzerland_2025.html"
     ]
 }
 

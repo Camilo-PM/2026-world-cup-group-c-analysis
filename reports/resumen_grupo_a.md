@@ -5,27 +5,27 @@
 This report analyzes the recent performance (last 10 matches) of Group A teams.
 
 ## Power Ranking
-1. Czechia
-2. Korea Republic
-3. South Africa
-4. Mexico
+1. Switzerland
+2. Bosnia and Herzegovina
+3. Canada
+4. Qatar
 
 ## Key Insights
 
 ### 🥇 Best Team (Recent Form)
-Czechia leads the group with:
-- 20 points out of 30
-- Goal Difference: 11.0
+Switzerland leads the group with:
+- 21 points out of 30
+- Goal Difference: 17.0
 - Win Rate: 60.0%
 
 ### ⚠️ Team to Improve
-Mexico shows weaker recent performance:
-- Only 12 points
-- Goal Difference: -3.0
+Qatar shows weaker recent performance:
+- Only 14 points
+- Goal Difference: -6.0
 
 ### ⚔️ Offensive vs Defensive Balance
-- Best Attack: Czechia
-- Best Defense: Czechia
+- Best Attack: Switzerland
+- Best Defense: Canada
 
 ## Visual Analysis
 
