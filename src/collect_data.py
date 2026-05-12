@@ -47,7 +47,7 @@ def collect_last_10_matches():
         last_10 = combined_df.head(10)
 
         filename = team.lower().replace(" ", "_") + "_last_10.csv"
-        last_10.to_csv(RAW_DATA_PATH + filename, index=False)
+        last_10.to_csv(RAW_DATA_PATH / filename, index=False)
 
         print(f"Guardado: {filename} | Partidos guardados: {len(last_10)}")
 

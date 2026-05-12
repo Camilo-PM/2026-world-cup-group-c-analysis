@@ -1,0 +1,5 @@
+﻿Team;Matches;Wins;Draws;Losses;Goals_For;Goals_Against;Goal_Difference;Avg_Goals_For;Avg_Goals_Against;Points_Form;Win_Rate;Goals_For_per_Game;Goals_Against_per_Game;Attack_Index;Defense_Index;Form_Index;Power_Score
+Morocco;10;7;2;1;17.0;4.0;13.0;1.7;0.4;23;0.7;1.7;0.4;1.7;2.5;0.7666666666666667;1.06
+Brazil;10;5;2;3;18.0;8.0;10.0;1.8;0.8;17;0.5;1.8;0.8;1.8;1.25;0.5666666666666667;0.8
+Scotland;10;5;1;4;18.0;12.0;6.0;1.8;1.2;16;0.5;1.8;1.2;1.8;0.8333333333333334;0.5333333333333333;0.7433333333333334
+Haiti;10;3;4;3;12.0;11.0;1.0;1.2;1.1;13;0.3;1.2;1.1;1.2;0.9090909090909091;0.43333333333333335;0.5559090909090909

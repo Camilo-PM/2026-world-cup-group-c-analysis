@@ -1,22 +1,26 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+RAW_DATA_PATH = BASE_DIR / "data" / "raw"
+PROCESSED_DATA_PATH = BASE_DIR / "data" / "processed"
+FINAL_DATA_PATH = BASE_DIR / "data" / "final"
+
 TEAMS = {
-    "Canada": [
-        "data/raw/html/canada.html",
-        "data/raw/html/canada_2025.html"
+    "Brazil": [
+        "data/raw/html/brazil.html",
+        "data/raw/html/brazil_2025.html"
     ],
-    "Bosnia and Herzegovina": [
-        "data/raw/html/bosnia.html",
-        "data/raw/html/bosnia_2025.html"
+    "Morocco": [
+        "data/raw/html/morocco.html",
+        "data/raw/html/morocco_2025.html"
     ],
-    "Qatar": [
-        "data/raw/html/qatar.html",
-        "data/raw/html/qatar_2025.html"
+    "Haiti": [
+        "data/raw/html/haiti.html",
+        "data/raw/html/haiti_2025.html"
     ],
-    "Switzerland": [
-        "data/raw/html/switzerland.html",
-        "data/raw/html/switzerland_2025.html"
+    "Scotland": [
+        "data/raw/html/scotland.html",
+        "data/raw/html/scotland_2025.html"
     ]
 }
-
-RAW_DATA_PATH = "data/raw/"
-PROCESSED_DATA_PATH = "data/processed/"
-FINAL_DATA_PATH = "data/final/"

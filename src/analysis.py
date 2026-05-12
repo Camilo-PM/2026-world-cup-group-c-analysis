@@ -4,7 +4,8 @@ from config import PROCESSED_DATA_PATH, FINAL_DATA_PATH
 
 def analyze_group():
 
-    df = pd.read_csv(PROCESSED_DATA_PATH + "grupo_b_last_10_clean.csv")
+    input_path = PROCESSED_DATA_PATH / "grupo_c_last_10_clean.csv"
+    df = pd.read_csv(input_path)
 
     summary = df.groupby("Team").agg(
         Matches=("Team", "count"),
@@ -19,24 +20,13 @@ def analyze_group():
     ).reset_index()
 
     summary["Points_Form"] = summary["Wins"] * 3 + summary["Draws"]
-
     summary["Win_Rate"] = summary["Wins"] / summary["Matches"]
-
-    summary["Goals_For_per_Game"] = (
-        summary["Goals_For"] / summary["Matches"]
-    )
-
-    summary["Goals_Against_per_Game"] = (
-        summary["Goals_Against"] / summary["Matches"]
-    )
+    summary["Goals_For_per_Game"] = summary["Goals_For"] / summary["Matches"]
+    summary["Goals_Against_per_Game"] = summary["Goals_Against"] / summary["Matches"]
 
     # Índices tipo scouting
     summary["Attack_Index"] = summary["Goals_For_per_Game"]
-
-    summary["Defense_Index"] = (
-        1 / summary["Goals_Against_per_Game"]
-    )
-
+    summary["Defense_Index"] = 1 / summary["Goals_Against_per_Game"]
     summary["Form_Index"] = summary["Points_Form"] / 30
 
     # Score final
@@ -53,13 +43,11 @@ def analyze_group():
     )
 
     # CSV principal
-    output_path = FINAL_DATA_PATH + "grupo_b_summary.csv"
-
+    output_path = FINAL_DATA_PATH / "grupo_c_summary.csv"
     summary.to_csv(output_path, index=False)
 
     # CSV Tableau
-    tableau_path = FINAL_DATA_PATH + "grupo_b_summary_tableau.csv"
-
+    tableau_path = FINAL_DATA_PATH / "grupo_c_summary_tableau.csv"
     summary.to_csv(
         tableau_path,
         index=False,
@@ -68,10 +56,8 @@ def analyze_group():
     )
 
     print(summary)
-
-    print("✅ Archivo creado en:", output_path)
-
-    print("✅ Archivo para Tableau creado en:", tableau_path)
+    print("Archivo creado en:", output_path)
+    print("Archivo para Tableau creado en:", tableau_path)
 
 
 if __name__ == "__main__":

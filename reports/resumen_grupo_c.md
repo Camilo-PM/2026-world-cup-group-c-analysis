@@ -1,17 +1,13 @@
-import pandas as pd
-from config import FINAL_DATA_PATH
 
-
-def generate_report():
-
-    df = pd.read_csv(FINAL_DATA_PATH / "grupo_c_summary.csv")
-
-    report = f"""
 # Group C - FIFA World Cup 2026 Analysis
 
 ## Team Rankings
 
-{df[['Team', 'Power_Score', 'Points_Form', 'Goal_Difference']].to_string(index=False)}
+    Team  Power_Score  Points_Form  Goal_Difference
+ Morocco     1.060000           23             13.0
+  Brazil     0.800000           17             10.0
+Scotland     0.743333           16              6.0
+   Haiti     0.555909           13              1.0
 
 ## Key Insights
 
@@ -26,15 +22,3 @@ def generate_report():
 2. Brazil
 3. Scotland
 4. Haiti
-"""
-
-    output_path = "reports/resumen_grupo_c.md"
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(report)
-
-    print("Reporte generado en:", output_path)
-
-
-if __name__ == "__main__":
-    generate_report()
